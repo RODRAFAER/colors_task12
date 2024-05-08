@@ -13,14 +13,14 @@ using std::endl;
 using std::reverse;
 
 int faslfjlks(){
-	cout << "àîûâëäàâ";
+	cout << "Ð°Ð¾Ñ‹Ð²Ð»Ð´Ð°Ð²";
 }
 
 int numCheck(int num) { 
 	while (cin.fail() || num < 0) {
 		cin.clear();
 		cin.ignore(1000, '\n');
-		cout << "Îøèáêà ââîäå äàííûõ. Ïîïðîáóéòå ñíîâà: ";
+		cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ðµ Ð´Ð°Ð½Ð½Ñ‹Ñ…. ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ ÑÐ½Ð¾Ð²Ð°: ";
 		cin >> num;
 	}
 	return num;
@@ -70,11 +70,11 @@ int main()
 		iterations.push_back(0);
 	}
 
-	cout << "Ââåäèòå êîëè÷åñòâî ñòðîê: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ñ€Ð¾Ðº: ";
 	cin >> rows;
 	rows = numCheck(rows);
 
-	cout << "Ââåäèòå êîëè÷åñòâî ñòîëáöîâ: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ð¾Ð»Ð±Ñ†Ð¾Ð²: ";
 	cin >> cols;
 	cols = numCheck(cols);
 
@@ -115,7 +115,7 @@ int main()
 
 	for (int i = 0; i < iterations.size(); i++) {
 		if (reverseVector[0] == iterations[i]) {
-			cout << "×èñëî ñ íàèáîëüøèì ñîâïàäåíèåì: " << i + 1 << ". ×èñëî ñîâïàäåíèé: " << reverseVector[0] << endl;
+			cout << "Ð§Ð¸ÑÐ»Ð¾ Ñ Ð½Ð°Ð¸Ð±Ð¾Ð»ÑŒÑˆÐ¸Ð¼ ÑÐ¾Ð²Ð¿Ð°Ð´ÐµÐ½Ð¸ÐµÐ¼: " << i + 1 << ". Ð§Ð¸ÑÐ»Ð¾ ÑÐ¾Ð²Ð¿Ð°Ð´ÐµÐ½Ð¸Ð¹: " << reverseVector[0] << endl;
 		}
 	}
 
